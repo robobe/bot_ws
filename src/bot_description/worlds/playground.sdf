@@ -7,22 +7,27 @@
     </include>
     <!-- A ground plane -->
     <include>
+      <name>ground</name>
       <uri>model://ground_plane</uri>
     </include>
 
     <include>
       <pose>3 0 0 0 0 0</pose>
+      <name>c1</name>
       <uri>model://construction_cone</uri>
     </include>
     <include>
+      <name>c2</name>
       <pose>0 3 0 0 0 0</pose>
       <uri>model://construction_cone</uri>
     </include>
     <include>
       <pose>0 -3 0 0 0 0</pose>
+      <name>c3</name>
       <uri>model://construction_cone</uri>
     </include>
     <include>
+      <name>c4</name>
       <pose>-3 0 0 0 0 0</pose>
       <uri>model://construction_cone</uri>
     </include>

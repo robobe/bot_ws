@@ -7,8 +7,12 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1
+        - /TF1/Tree1
         - /RobotModel1
         - /LaserScan1
+        - /Map1
+        - /Map1/Status1
+        - /Map1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 719
   - Class: rviz_common/Selection
@@ -55,6 +59,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
         base_link:
           Value: true
         caster_wheel:
@@ -77,6 +83,8 @@ Visualization Manager:
       Tree:
         odom:
           base_link:
+            base_footprint:
+              {}
             chassis:
               caster_wheel:
                 {}
@@ -106,6 +114,10 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
           Alpha: 1
           Show Axes: false
@@ -176,6 +188,27 @@ Visualization Manager:
         Value: /scan
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Transient Local
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map_updates
+      Use Timestamp: false
       Value: true
   Enabled: true
   Global Options:
